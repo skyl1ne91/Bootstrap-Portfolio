@@ -58,7 +58,23 @@
 
       }
 
-      
+      .container{
+          background: white;
+          padding: 10px;
+          border: solid grey 1px;
+          position: relative;
+          top: 10px;
+      }
+
+      .btn-primary{
+          background: #4aaaa5;
+          border-color: grey;
+      }
+      #concrete{
+        border-bottom: 1px solid lightgrey;
+        color: #4aaaa5;
+        padding: 10px;
+      }
      
 
       
@@ -67,10 +83,11 @@
     </style>
 </head>
 <body>
-       <header><div>
-      <h1 style="margin-top:10px background-color:#4aaaa5">Juan Carlos Cardenas</h1>
-      </div>
-                <ul class="nav justify-content-end cruel teal">
+       <header>
+        <div>
+                <h1 style="margin-top:10px background-color:#4aaaa5">Juan Carlos Cardenas</h1>
+        </div>
+                        <ul class="nav justify-content-end cruel teal">
                         <li class="nav-item">
                           <a class="nav-link active" href="index.html" target="_self" >About</a>
                         </li>
@@ -80,11 +97,31 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#" target="_self">Contact</a>
                         </li>
-                       
-                      </ul>
+                       </ul>
+        </header>  
+<div class="container">
+        <h2 id="concrete">Contact</h2>
+        <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlInput1">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@example.com">
+                      </div>
+                 
+                
+                <div class="form-group">
 
-
-
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary button">Submit</button>
+              </form>
+</div>
 
 
 
@@ -98,7 +135,7 @@
 
 
               
-</header>
+
     
 </body>
 </html>
